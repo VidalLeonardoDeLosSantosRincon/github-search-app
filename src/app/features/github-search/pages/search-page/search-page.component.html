@@ -1,0 +1,9 @@
+<div class="search-container">
+  <input [(ngModel)]="username" placeholder="Ingresa un usuario de GitHub" (keyup.enter)="onSearch()" />
+  <button (click)="onSearch()">Buscar</button>
+</div>
+
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+<app-user-card *ngIf="user" [user]="user"></app-user-card>
+<app-repo-list *ngIf="repos.length > 0" [repos]="repos"></app-repo-list>

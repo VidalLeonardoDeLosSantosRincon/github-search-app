@@ -1,8 +1,17 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { routes } from './app.routes';
+import { UserRepository } from './domain/repositories/user.repository';
+import { GithubHttpRepository } from './core/repositories/github-http.repository';
+import { errorInterceptor } from './core/interceptors/error.interceptor';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+    provideHttpClient(withInterceptors([errorInterceptor])),
+    // Inyección de Dependencias: Vinchula la interfaz pura con la implementación concreta
+    { provide: UserRepository, useClass: GithubHttpRepository }
+  ]
 };

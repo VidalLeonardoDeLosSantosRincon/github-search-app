@@ -1,0 +1,9 @@
+.repo-list { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.repo-list li { 
+    padding: 8px; 
+    border-bottom: 1px solid #eee; 
+}
