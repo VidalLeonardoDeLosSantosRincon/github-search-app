@@ -16,7 +16,7 @@ import { RepoListComponent } from '../../components/repo-list/repo-list.componen
   styleUrl: './search-page.component.css'
 })
 export class SearchPageComponent {
-  username = '';
+  username = 'AlexDio123';
   user: User | null = null;
   repos: Repository[] = [];
   errorMessage = '';
@@ -42,7 +42,7 @@ export class SearchPageComponent {
 
   private loadRepos() {
     this.getUserReposUseCase.execute(this.username).subscribe({
-      next: (reposData) => (this.repos = reposData)
+      next: (reposData) => (this.repos = reposData.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()))
     });
   }
 }

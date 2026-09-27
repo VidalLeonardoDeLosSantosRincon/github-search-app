@@ -1,9 +1,53 @@
-.repo-list { 
+.repo-list {
+    color:white;
+}
+
+.repo-list .repo-list-content { 
     list-style: none; 
     padding: 0; 
 }
 
-.repo-list li { 
-    padding: 8px; 
-    border-bottom: 1px solid #eee; 
+.repo-list .repo-list-content li { 
+    background-color: #1D293D;
+    padding: 20px 25px; 
+    box-sizing: border-box;
+    min-height: 50px;
+    border-left: 20px solid orange; 
+    border-radius: 5px;
+    margin-bottom:10px;
+    box-shadow: 2px 2px 10px #1D293D;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.repo-list .repo-list-content li:hover {
+    border-right: 2px solid orange; 
+    border-top: 2px solid orange; 
+    border-bottom: 2px solid orange; 
+    box-shadow: 2px 2px 100px   black;
+    box-sizing: border-box;
+    transform: scale(1.04);
+    transition: transform 0.9s ease;
+}
+
+.repo-list .repo-list-content li a {
+    color:orange;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.repo-list .repo-list-content li p {
+    color:lightgray;
+    margin:10px 0;
+}
+
+.repo-list .repo-list-content li span {
+    font-size:12px;
+    color:lightgray;
 }

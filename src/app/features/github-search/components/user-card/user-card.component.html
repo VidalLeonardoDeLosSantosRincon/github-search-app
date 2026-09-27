@@ -1,10 +1,29 @@
-<div class="card">
-  <img [src]="user.avatar_url" [alt]="user.login" class="avatar" />
-  <h2>{{ user.name || user.login }}</h2>
-  <p>{{ user.bio }}</p>
-  <div class="stats">
-    <span>Seguidores: {{ user.followers | formatNumber }}</span>
-    <span>Siguiendo: {{ user.following | formatNumber }}</span>
-    <span>Repos: {{ user.public_repos }}</span>
-  </div>
+<div class="user-card">
+    <div class="user-card-content">
+        <img [src]="user.avatar_url" [alt]="user.login" class="avatar" />
+        <div class="user-info">
+            <h2 class="user-name">
+                {{ user.name || user.login }}
+                <span>{{user.created_at | formatDate}}</span>
+            </h2>
+            <p class="user-bio">{{ user.bio }}</p>
+        </div>
+    </div>
+
+    <div class="stats">
+        <table>
+            <thead>
+                <th>{{ user.followers | formatNumber }}</th>
+                <th>{{ user.following | formatNumber }}</th>
+                <th>{{ user.public_repos }}</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seguidores</td>
+                    <td>Siguiendo</td>
+                    <td>Repositorios</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

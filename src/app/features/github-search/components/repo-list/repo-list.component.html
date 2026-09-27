@@ -1,6 +1,15 @@
-<ul class="repo-list">
-  <li *ngFor="let repo of repos">
-    <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
-    <p>{{ repo.description }}</p>
-  </li>
-</ul>
+<div class="repo-list">
+    <h2>Repositorios: {{repos.length || 0}}</h2>
+    <hr/>
+    <br/>
+    <ul class="repo-list-content">
+        <li *ngFor="let repo of repos">
+            <span>
+                <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+                &nbsp;&nbsp;<b>Última actualización:</b>&nbsp;{{ repo.updated_at | formatDate}}
+            </span>
+            <p>{{ repo.description }}</p>
+            <span><b>{{ repo.created_at | formatDate}}</b></span>
+        </li>
+    </ul>
+</div>
