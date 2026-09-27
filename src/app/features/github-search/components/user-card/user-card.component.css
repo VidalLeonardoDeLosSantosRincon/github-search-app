@@ -40,6 +40,7 @@
 
 .user-card .user-card-content .user-info .user-name {
     color:white;
+    text-align: left;
 }
 
 .user-card .user-card-content .user-info .user-name span {
@@ -69,4 +70,23 @@
 
 .user-card .stats table tbody tr td {
     color:lightgray;
+}
+
+@media (max-width: 1800px) {
+    .user-card .user-card-content .user-info .user-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .user-card .user-card-content .user-info .user-bio { 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .user-card .user-card-content .user-info .user-bio { 
+        font-size: 12px;
+    }
 }
