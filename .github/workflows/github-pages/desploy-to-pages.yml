@@ -1,0 +1,60 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # Cambia a 'main' si tu rama principal se llama así
+
+# Variables globales para TODO el workflow
+env:
+  APP_NAME: 'github-search-app'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Obtener el código del repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Configurar Node.js (Ajusta la versión según tu proyecto Angular)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3. Instalar dependencias
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Compilar el proyecto de Angular
+      # Reemplaza REPOS_NOMBRE con el nombre exacto de tu repositorio en GitHub
+      - name: Build Angular App
+        run: npx ng build --configuration production --base-href /${{ env.APP_NAME }}/
+
+      # 5. Configurar GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 6. Subir los archivos generados como artefacto de Pages
+      # Nota: En Angular 17/18/19, los archivos compilados se guardan en dist/<nombre-proyecto>/browser
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist/${{ env.APP_NAME }}/browser' # Ajusta la ruta a la carpeta de salida de tu proyecto
+
+      # 7. Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
