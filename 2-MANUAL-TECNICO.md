@@ -1,0 +1,1 @@
+# Manual de Técnico: [GitHub Search App](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/tree/master)
