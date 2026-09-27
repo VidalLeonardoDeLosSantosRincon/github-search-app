@@ -16,7 +16,7 @@ import { RepoListComponent } from '../../components/repo-list/repo-list.componen
   styleUrl: './search-page.component.css'
 })
 export class SearchPageComponent {
-  username = 'AlexDio123';
+  username = '';
   user: User | null = null;
   repos: Repository[] = [];
   errorMessage = '';
