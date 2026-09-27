@@ -29,8 +29,28 @@ Este es un ejemplo básico de una implementación realizada en **Angular 17**  l
 2. Haz clic en el botón Buscar.
 
 3. La aplicación cargará la información del usuario junto con la lista de sus repositorios.
+##
 
-4. 
+## Demostración y posibles escenerios
+1. Ir a la barra de busqueda.  
+![](src/assets/images/docs/manual-usuario/barra-de-busqueda.jpg)
+
+2. Si se intenta buscar sin colocar ningun nombre.
+![](src/assets/images/docs/manual-usuario/barra-de-busqueda-nombre-obligatorio.jpg)
+
+3. Si se intenta buscar y el nombre de usuario exacto no existe.
+![](src/assets/images/docs/manual-usuario/barra-de-busqueda-usuario-no-encontrado.jpg)
+
+4. Si se intenta buscar y se encuentrado el usuario.
+![](src/assets/images/docs/manual-usuario/barra-de-busqueda-sastifactoria.jpg)
+
+5. Si se desea ir al repositorio en Github
+![](src/assets/images/docs/manual-usuario/listado-repositorios-ir-repo.jpg)
+
+6. Si el usuario encontrado tiene más de 30 repositorios públicos, hay que recordar que el api solo retorna 30 repositorios por petición.
+![](src/assets/images/docs/manual-usuario/listado-repositorios-solo-30.jpg)
+
+En resumen esa sería todo la demostración, a nivel general es un proyecto sencillo y con el que es fácil interactuar.
 ##
 
 ### NOTAS
