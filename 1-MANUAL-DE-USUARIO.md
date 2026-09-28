@@ -70,10 +70,15 @@ En resumen esa sería todo la demostración, a nivel general es un proyecto senc
 
 ### NOTAS
 
-**Sobre los repositorios**
-- Actualmente estoy ordenando los repositorios por fecha de última de actualiazación como lo hace la interfaz official de github, esto el api no lo hace por su cuenta.
+- **Sobre los repositorios**
+    - Actualmente estoy ordenando los repositorios por fecha de última de actualiazación como lo hace la interfaz official de github, esto el api no lo hace por su cuenta.
 
-- Si hace click sobre el nombre de cualquier repositorio en su tarjeta te saldre una nueva pestaña.
+    - Si hace click sobre el nombre de cualquier repositorio en su tarjeta te saldre una nueva pestaña.
 
-- Por defecto, la API de GitHub devuelve un máximo de 30 repositorios por página. Si el usuario tiene más de 30 repositorios (como en cuentas con cientos de proyectos públicos), la aplicación mostrará únicamente los 30 repositorios más recientes según el orden predeterminado de la consulta.
-##
+    - Por defecto, la API de GitHub devuelve un máximo de 30 repositorios por página. Si el usuario tiene más de 30 repositorios (como en cuentas con cientos de proyectos públicos), la aplicación mostrará únicamente los 30 repositorios más recientes según el orden predeterminado de la consulta.
+
+- **Para más detalles de configurarion:**
+    - [Ver Manual Técnico](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/2-MANUAL-TECNICO.md)
+
+    - [Ver Manual del Paquete de Instalación](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/3-PAQUETE-DE-INSTALACION.md)
+---

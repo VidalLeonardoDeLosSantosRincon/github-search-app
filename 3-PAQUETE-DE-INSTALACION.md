@@ -10,6 +10,28 @@
 ---
 # Paquete de Instalación: [GitHub Search App](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/tree/master)
 
+
+### Requisitos Mínimos para Ejecución Local
+* **Node.js: v18.19.0 o superior (Recomendado Node v20 LTS).** 
+    - Para descargar Node.js dirigete a [Node.js](https://nodejs.org/es/download) y descargas la versión que necesites.
+    - Una vez instales **Node.js** ve a la terminal y confirma tu versión de Node con el comando ``node --version``.
+
+* **npm: v9.0.0 o superior. (Viene incluído con **Node**)**
+    - Una vez instalado **Node.js** ve a la terminal y confirma tu versión de ``npm`` con
+    el comando ``npm --version``.
+
+* **Angular CLI: v17.3.0. (Se instala mediante **npm**)**
+
+    - Instala **Angular** mediante ``npm`` con el comando ``npm install -g @angular/cli@17.3.0``
+
+    - Ve a la terminal y confirma tu version de **Angular** con el ``ng version``
+
+    Aquí te dejo el enlace de la documentación [Angular Docs](https://angular.dev/installation) para más detalles sobre Angular como primeros pasos, configuiración, instalacion, etc.
+
+* **Navegador Web: Chrome, Firefox, Edge o Safari en versiones recientes.**
+
+---
+
 ## Paquete de Instalación y Despliegue
 
 ### Pasos para Ejecutar en Entorno Local
@@ -50,7 +72,7 @@ Una vez termine de compilar tendras tu app corriendo en el [http://localhost:420
 ## GitHub Actions (CI/CD Automático)
 Actualmente el proyecto cuanta con un archivo ``.github/workflows/deploy-to-pages.yml`` el cual se encarga de desplegar el app a github pages cad que la rama master sufre un cambio.
 
-```
+```yml
 name: Deploy Angular to GitHub Pages
 
 on:
@@ -114,4 +136,6 @@ jobs:
 
 ```
 ## NOTAS
-Esta en la versión que tiene el archivo ``.github/workflows/deploy-to-pages.yml`` al momento de realizadoeste documento, para una mejor confirmación del contenido actual de este archivo, favor ir a [.github/workflows/deploy-to-pages.yml](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/.github/workflows/desploy-to-pages.yml).
+Esta es la versión que tiene el archivo ``.github/workflows/deploy-to-pages.yml`` al momento de realizado este documento, para una mejor confirmación del contenido actual de este archivo, favor ir a [.github/workflows/deploy-to-pages.yml](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/.github/workflows/desploy-to-pages.yml).
+
+---
