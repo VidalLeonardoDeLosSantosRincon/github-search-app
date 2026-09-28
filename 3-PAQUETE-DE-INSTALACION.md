@@ -5,6 +5,8 @@
 
 **Última actualización:** 27/09/2026
 
+[Ver Manual del Paquete de instalación en el repositorio](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/3-PAQUETE-DE-INSTALACION.md)
+
 ---
 # Paquete de Instalación: [GitHub Search App](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/tree/master)
 

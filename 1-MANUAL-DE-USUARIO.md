@@ -4,6 +4,8 @@
 
 **Última actualización:** 27/09/2026
 
+[Ver Manual de Usuario en el repositorio](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/blob/master/1-MANUAL-DE-USUARIO.md)
+
 ---
 # Manual de Usuario: [GitHub Search App](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/tree/master)
 
