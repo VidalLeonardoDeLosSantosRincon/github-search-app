@@ -1,3 +1,10 @@
+**Autor:** Vidal De Los Santos
+
+**Versión:** 1.0.0
+
+**Última actualización:** 27/09/2026
+
+---
 # Manual de Usuario: [GitHub Search App](https://github.com/VidalLeonardoDeLosSantosRincon/github-search-app/tree/master)
 
 ## Introducción
