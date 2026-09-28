@@ -24,6 +24,12 @@ Este es un ejemplo básico de una implementación realizada en **Angular 17**  l
 ##
 
 ## Instrucciones de Uso
+Actualmente el app se encuentra desplegada en mi domininio github pages. 
+
+Has click en [https://vidalleonardodelossantosrincon.github.io/github-search-app/](https://vidalleonardodelossantosrincon.github.io/github-search-app/search) para poder iniciar tu interacción.
+
+**Pasos a seguir**
+
 1. Ingresa el nombre de usuario de GitHub en el buscador (ejemplo: gvanrossum).
 
 2. Haz clic en el botón Buscar.
